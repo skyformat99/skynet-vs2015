@@ -80,9 +80,9 @@ struct socket {
 	int64_t wb_size;
 	int fd;
 	int id;
-	uint8_t protocol;
-	uint8_t type;
-	uint16_t udpconnecting;
+	uint32_t protocol;
+	uint32_t type;
+	uint32_t udpconnecting;
 	int64_t warn_size;
 	union {
 		int size;
